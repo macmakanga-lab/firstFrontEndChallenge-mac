@@ -26,6 +26,7 @@
       }
     </style>
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
   </head>
   <body>
     <a href="#main-container" class="skip-link">Skip to main content</a>
@@ -39,13 +40,13 @@
       <button class="hamburger" id="hamburger" aria-label="Open menu">
         <img src="./assets/images/icon-menu.svg" alt="" />
       </button>
+      <button class="close-menu" id="close-menu" aria-label="Close menu">
+        <img src="./assets/images/icon-close.svg" alt=""  style="display:none;"/>
+      </button>
     </header>
 
     <!-- Menu panel — hidden until the hamburger is activated -->
-    <nav class="nav-list open" id="menu-panel" aria-label="Main menu">
-      <button class="close-menu" aria-label="Close menu">
-        <img src="./assets/images/icon-close.svg" alt="" />
-      </button>
+    <nav class="nav-list" id="menu-panel" aria-label="Main menu">
       <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#our-work">Our Work</a></li>
@@ -54,6 +55,8 @@
         <li><a href="#donate">Donate</a></li>
       </ul>
     </nav>
+
+    <div class="overlay" id="overlay"></div>
 
     <main class="main-container" id="main-container">
       <!-- Hero -->
@@ -117,8 +120,8 @@
 
     <!-- Footer -->
     <footer>
-        <p>© 2026 Bridge Collective</p>
-        <p>Registered charity 12345678</p>
+      <p>© 2026 Bridge Collective</p>
+      <p>Registered charity 12345678</p>
     </footer>
 
     <div class="attribution">
